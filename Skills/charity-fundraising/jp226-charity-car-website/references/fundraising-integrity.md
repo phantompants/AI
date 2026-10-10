@@ -32,6 +32,12 @@ The rules behind a fundraising page that people can trust. This is general guida
 
 **Privacy.** Publish only the contact details the user has chosen to publish. Do not publish home addresses, personal phone numbers or children's full names.
 
+**Beneficiary stories.** A named child or family is shown only with current, confirmed consent from the family, and never with a full name or a full address. Without it, tell the story in general terms and link to the charity's own stories page.
+
+**Charity statistics.** National totals, grant figures and "every $X buys Y" lines belong to the charity and go out of date. Link to the charity's page instead of copying them. If the team wants one, quote it with the charity's wording, the source and the date.
+
+**Event facts.** Dates and routes for an event come from the organiser's page and are credited to it. If the organiser changes them, the team page is out of date, so say "check the organiser's page for changes".
+
 **Keep it current.** Update figures and dates after each milestone. After the event, say it has finished, give the final dated total, and thank donors.
 
 ## 2. Safe wording
@@ -44,6 +50,8 @@ Use these as starting points and adjust to the facts.
 | Where donations go | "Donations are made directly to [Charity] on its official donation page. We do not collect or handle donations." |
 | Dated figure | "Raised so far: $[amount], as at [date]." |
 | Sponsor thanks | "Thank you to our sponsors, who have agreed to be listed." |
+| Past events | "Dates shown have been checked against [organiser] and local news reports. Other details come from our own records." |
+| Event facts | "Dates and route as published by [organiser]." |
 | Cautious claim | "Please see [Charity]'s donation page for how donations are used." |
 
 ## 3. Wording to avoid
@@ -72,6 +80,9 @@ Use these as starting points and adjust to the facts.
 - [ ] Every figure has an "as at" date and was supplied by the team
 - [ ] Every sponsor agreed to be listed
 - [ ] Every person in a photo agreed, and children are handled carefully
+- [ ] Event dates and routes match the organiser's page, and past-event dates are labelled as checked or from the team's records
+- [ ] No named child or family without current consent, and no copied charity statistics
+- [ ] Every contact channel listed is checked by someone
 - [ ] The footer notice is accurate
 - [ ] No claim about tax or 100% unless the charity confirms
 - [ ] No placeholder text is left on the page

@@ -13,7 +13,7 @@ Good photos make a fundraising page. Prepare them before the site is built.
 
 ## 1. Gather
 
-Collect a hero photo (the car, ideally with the team), a few more car photos, team photos, and logos. Keep an untouched original of every file. Attach the real files to Claude. A description of a photo does not supply the photo.
+Collect a hero photo (the car, ideally with the team), a few more car photos, team photos, and logos. Keep an untouched original of every file. If the team has an existing site, ask for the original files, because the workspace usually cannot download them from the live site. Re-save web copies without hidden location and camera data. Attach the real files to Claude. A description of a photo does not supply the photo.
 
 ## 2. Crop and clean
 

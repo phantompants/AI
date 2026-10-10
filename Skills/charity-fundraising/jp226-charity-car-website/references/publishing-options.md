@@ -36,11 +36,26 @@ A domain name is usually a separate yearly cost, even when hosting is free. A sh
 
 ## 4. Contact and forms
 
-Static hosting cannot run a server-side contact form. Use one of:
+Static hosting cannot run a server-side contact form, and a form collects personal details the team then has to look after. Offer the simplest option that works, in this order:
 
-- A public contact link or address the team is happy to publish
-- Social media message links
-- A separate form service (check its privacy terms)
+| Option | Effort | Notes |
+|---|---|---|
+| Email and phone shown as text | None | Public address gets some spam. Use a forwarding address if you can |
+| "Email us" button (mailto link with a subject) | None | Opens the visitor's mail app. Fails for people with none set up |
+| Message links for active accounts | Low | Messenger, Instagram, TikTok, WhatsApp. List only accounts someone checks regularly |
+| Google Form link | Low | A button that opens the form. Replies go to the team's Google account |
+| Form service (for example Formspree) | Medium | Looks like part of the site. Free plans have limits. Check the privacy terms |
+| Form script on the host | High | Needs server setup and spam protection. Avoid unless the team wants it |
+
+**WhatsApp.** Use a click-to-chat link in the form `https://wa.me/61XXXXXXXXX`, with the number in international format and no spaces, plus, or leading zero. This publishes the number, so use the public phone number the team already shows, or a separate WhatsApp Business number. For group updates, a WhatsApp channel or group invite link is a separate option. Do not publish a personal number the team has not chosen to make public.
+
+**Messenger.** A link in the form `https://m.me/[page name or ID]` opens a chat with the Facebook page. Test it on a phone before publishing.
+
+Always show the address or number as text as well as a link, because phone and email links do not work for every visitor.
+
+## 4a. Uploading to your host
+
+Upload `index.html` and the `images` folder to the site's web space (any host that serves plain HTML) with the host's file manager or an SFTP tool, keeping the folder names. If the old site's files are there, back them up first. Check the new page on `www` and without it. If the page loads fonts from Google Fonts, say so to the team.
 
 ## 5. Checking the live site
 

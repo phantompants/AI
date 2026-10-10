@@ -68,6 +68,11 @@ section.alt .card{background:var(--bg)}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1rem;margin:0}
 dt{font-weight:700}
 dd{margin:0}
+table{border-collapse:collapse;width:100%;max-width:46rem}
+caption{text-align:left;color:var(--muted);padding-bottom:.5rem}
+th,td{text-align:left;padding:.45rem .75rem .45rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{width:5rem;white-space:nowrap}
+ul.contact{list-style:none;margin:0 0 1rem;padding:0;display:flex;flex-wrap:wrap;gap:.75rem}
 ul.sponsors{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr))}
 ul.sponsors .slot{min-height:5rem}
 footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.95rem;color:var(--muted)}
@@ -85,6 +90,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.95rem;color:va
         <li><a href="#story">Our story</a></li>
         <li><a href="#car">The car</a></li>
         <li><a href="#event">The event</a></li>
+        <li><a href="#past">Past events</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#help">How to help</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -159,6 +165,21 @@ footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.95rem;color:va
   </div>
 </section>
 
+<!-- PAST EVENTS: delete this whole section if the team has no history to show. Show a date only where it was checked against the organiser's page or local news. -->
+<section class="alt" id="past">
+  <div class="wrap">
+    <h2>Past events</h2>
+    <table>
+      <caption>[NEEDED: Event name] over the years</caption>
+      <tbody>
+        <tr><th scope="row">[NEEDED: year]</th><td>[NEEDED: route, and dates if checked]</td></tr>
+        <tr><th scope="row">[NEEDED: year]</th><td>[NEEDED: route, and dates if checked]</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Dates shown have been checked against [NEEDED: organiser] and local news reports. Other details come from our own records.</p>
+  </div>
+</section>
+
 <!-- SPONSORS: list only sponsors who agreed. Delete the section if there are none yet. -->
 <section class="alt" id="sponsors">
   <div class="wrap">
@@ -219,8 +240,15 @@ footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.95rem;color:va
 <section class="alt" id="contact">
   <div class="wrap">
     <h2>Contact and follow us</h2>
-    <p>[NEEDED: A public contact link or address the team is happy to publish.]</p>
-    <p>[NEEDED: Social media links, for example Follow us on Instagram.]</p>
+    <p>[NEEDED: A public contact line the team is happy to publish.]</p>
+    <!-- One item per channel the team really checks. Delete the rest. Show the address or number as text too. -->
+    <ul class="contact">
+      <li><a class="btn" href="mailto:[NEEDED-email]?subject=Message%20for%20[NEEDED-team]">Email us</a></li>
+      <li><a href="https://m.me/[NEEDED-page-name]" rel="noopener">Message us on Facebook</a></li>
+      <li><a href="https://wa.me/[NEEDED-number-international-format]" rel="noopener">Chat on WhatsApp</a></li>
+      <li><a href="https://www.instagram.com/[NEEDED-handle]" rel="noopener">Instagram</a></li>
+    </ul>
+    <p>[NEEDED: Email address and phone number shown as text, only if the team chose to publish them.]</p>
   </div>
 </section>
 

@@ -1,9 +1,19 @@
 # Version History
 
+## v1.03 (2026-10-10)
+
+- Made the skill host neutral: removed named-host wording from the interview, brief template and publishing options
+- Publishing options now has a generic "Uploading to your host" section
+- Author: JP226Prints
+
 ## v1.02 (2026-10-10)
 
-- Added a category (`charity-fundraising`) so the skill is filed in the `charity-fundraising/` folder of the public repository
-- No change to how the skill works
+- Interview now starts with any existing site or page, reads it first, and checks event dates and routes against the organiser's official page
+- New interview topics: existing site, event history, beneficiary stories and consent, charity claims, lettering or typeface, active contact channels, host and what replaces an old contact form
+- Fundraising rules 8 and 9: no named child or family without current consent, and no copied charity statistics
+- Contact options reworked for a simple workflow: email and phone, "Email us" button, message links (Messenger, Instagram, WhatsApp click-to-chat), Google Form link, form service
+- Template: optional Past events table and a Message us list
+- Brief template, publishing options (generic host upload), image preparation and README updated
 - Author: JP226Prints
 
 ## v1.01 (2026-10-10)

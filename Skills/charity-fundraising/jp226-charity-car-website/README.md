@@ -6,7 +6,7 @@ Builds a fundraising website for a charity themed car or team, such as a charity
 
 ## What it does
 
-1. Asks for the team story, event details, the charity's official donation page, sponsors and photos.
+1. Reads any existing site or page first, then asks for what is missing: the team story, event details and history, the charity's official donation page, sponsors, photos and the contact channels the team really uses.
 2. Writes a one-page brief for you to approve.
 3. Builds a fast, accessible one-page site from a ready template, in your livery colours, with light and dark modes.
 4. Checks the site for general problems and for fundraising problems, then looks at it on desktop and phone.
@@ -19,6 +19,8 @@ Builds a fundraising website for a charity themed car or team, such as a charity
 - Nothing is invented: no made-up totals, sponsors, quotes or endorsements.
 - Sponsors, the charity's logo and people in photos need permission first.
 - The footer says who runs the page and where donations go.
+- Named children or families and the charity's own statistics are left out unless consent and wording are confirmed. The page links to the charity instead.
+- Event dates are taken from the organiser's page, and past-event dates are labelled as checked or from the team's own records.
 
 The checker will not pass the site while the donation link is missing or still a placeholder.
 
@@ -34,7 +36,7 @@ Add the `.skill` file to Claude as a skill. The optional checks need Python 3 an
 > /jp226-charity-car-website
 ```
 
-Have these ready if you can: the charity's official donation link, your team story, event dates, the car's details, sponsor names and logos (with their agreement), and photos.
+Have these ready if you can: the address of your current site or Facebook page, the charity's official donation link, your team story, event dates, the car's details, sponsor names and logos (with their agreement), photos, and which social or messaging accounts you check regularly.
 
 ## Files
 
@@ -51,7 +53,9 @@ Have these ready if you can: the charity's official donation link, your team sto
 
 **I do not have photos yet.** The site is built with labelled stand-ins, and the missing photos are listed for you.
 
-**The contact form does not send email.** Static sites cannot send email. Use a public contact link, or a separate form service.
+**The contact form does not send email.** Static sites cannot send email. Use email and phone, an "Email us" button, message links for the accounts you check (Messenger, Instagram, WhatsApp), or a Google Form link. See `references/publishing-options.md`.
+
+**Can it rebuild my old site?** Yes. Give it the address and it reads the site first. Social pages often block it, so paste the text or attach screenshots, and attach the original photo files.
 
 **Is this legal advice?** No. Check the charity's guidelines and your state or territory's fundraising rules.
 

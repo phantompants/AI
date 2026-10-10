@@ -1,9 +1,9 @@
 ---
 name: jp226-charity-car-website
-description: Plans and builds a fundraising website for a charity themed car or team, such as a charity rally, drive, 4WD adventure or car show entry. Collects the team story, event details, official donation link, sponsors and photos, then builds a fast, accessible one-page site from a ready template with honest, dated fundraising figures and a link to the charity's own donation page. Use when the user wants a website for a charity car, rally team, fundraising vehicle or sponsored drive, says "build our team website", "make a site for our charity car", "we need a donation page for our rally team", or asks how to go from brief to live website. Triggers on "/jp226-charity-car-website".
+description: Plans and builds a fundraising website for a charity themed car or team, such as a charity rally, drive, 4WD adventure or car show entry. Collects the team story, event details and history, official donation link, sponsors, photos and contact channels (or reads an existing site first), then builds a fast, accessible one-page site from a ready template with honest, dated fundraising figures and a link to the charity's own donation page. Use when the user wants a website for a charity car, rally team, fundraising vehicle or sponsored drive, says "build our team website", "make a site for our charity car", "we need a donation page for our rally team", or asks how to go from brief to live website. Triggers on "/jp226-charity-car-website".
 compatibility: Claude 3.5+ (Desktop, claude.ai, Claude Code). Python 3 and Chromium (Playwright) are needed for the optional checks.
 metadata:
-  version: "v1.02"
+  version: "v1.03"
   author: "JP226Prints"
   created: "2026-10-10"
   updated: "2026-10-10"
@@ -31,7 +31,7 @@ A one-page site from `assets/template/index.html` with these sections: hero with
 
 ## Fundraising rules that always apply
 
-People give money because they trust the page. These rules protect that trust, and they matter more than the design. Read `references/fundraising-integrity.md` for the full list and wording.
+People give money because they trust the page. These rules protect that trust, and they matter more than the design. Read `references/fundraising-integrity.md` for the full list and wording. Rules 8 and 9 were added in v1.02 after a rebuild of a long-running team site.
 
 1. **Donations go to the charity, not the team.** The donate button links to the charity's own official donation page, supplied by the user. Never guess or invent a link. Never build a payment form, and never ask for card, bank or account details.
 2. **Dated figures only.** Show an amount raised only with an "as at" date and only if the user supplied it. No live counters that are not real.
@@ -40,6 +40,8 @@ People give money because they trust the page. These rules protect that trust, a
 5. **Say who is who.** The footer says the page is run by the team and that donations are made directly to the charity. Wording such as "independent fundraising team" is used only if the user confirms it is true.
 6. **Careful claims.** Statements like "100% of donations go to charity" or "tax deductible" are included only if the user confirms the charity says so. Otherwise leave them out.
 7. **People's privacy.** Ask before using photos of identifiable people, especially children. Use only the contact details the user chooses to publish.
+8. **Beneficiary stories.** Do not name or show a child or family the team is raising money for unless the user confirms current consent. By default, link to the charity's own stories page instead.
+9. **Charity statistics.** Do not copy the charity's national totals, grant figures or "where the money goes" examples onto the team page. They go out of date and are the charity's to state. Link to the charity's page.
 
 If the user asks for something that breaks these rules, explain why in one or two sentences, and offer the honest version.
 
@@ -47,22 +49,32 @@ If the user asks for something that breaks these rules, explain why in one or tw
 
 ### Step 1: Collect the material
 
+**Start with what already exists.** Ask first whether the team has a current website, a Facebook page or other pages. If the user gives an address, read it with WebFetch before asking anything else, pre-fill what you can, and ask only about what is missing, out of date or in conflict. Social sites often block fetching. If a page is blocked, say so and ask for pasted text or screenshots. The workspace usually cannot download images from the old site, so ask the user to attach the real files.
+
+**Check the facts you can check.** For an event the team has entered or will enter, read the organiser's or charity's official event page for dates, route and year, and credit it on the page. For past events, check dates against the organiser's pages and local news, and keep a note of which entries were confirmed and which come only from the team's own records.
+
 Run a short interview. Use AskUserQuestion, up to four questions at a time, with 2 to 4 options each. Run no more than three rounds. Ask for facts and files you cannot invent.
 
 | Topic | What to find out |
 |---|---|
+| Existing site | Is there a current site or page to rebuild? Its address, and what to keep, drop or update |
 | Team | Team name, who is in it, the story: why they are doing this |
 | Charity | Charity name, the official donation page URL, whether the charity has approved the page or its name and logo |
-| Event | Event name, dates, route or location, how people can follow along |
+| Event | Event name, dates, route or location (from the organiser's page where possible), how people can follow along. Which event the site should lead with |
+| History | Past events the team has done: years, routes, dates. Which can be checked and which come only from the team's records |
 | Car | Make, model, year, the theme or livery, anything special about it |
 | Money | Fundraising target, the current amount and its date, or "no figure yet" |
+| Beneficiary stories | Does the team feature a child or family by name or photo? Is consent current? Or link to the charity's stories page instead |
+| Charity claims | Which statistics or "where the money goes" statements, if any, the charity has approved for the team to use. Default: none, link to the charity |
 | Sponsors | Who, with confirmation each agreed to be listed, and their logo files |
 | Assets | Hero photo, car photos, team photos, logos. Ask the user to attach the real files |
-| Contact and social | The public contact link or address and social pages they want shown |
-| Look | Livery colours, light or dark, tone (friendly, bold, cheeky), examples they like |
-| Publishing | Domain name, where it will be hosted, who updates it and when |
+| Contact and social | Which accounts are active and checked regularly (for example Facebook, Instagram, TikTok, WhatsApp). Which of those should work as a way to contact the team. The handle, link or number for each. Whether a WhatsApp number is the same as the public phone number. Which details the team is happy to publish |
+| Look | Livery colours, light or dark, tone (friendly, bold, cheeky, puns), the lettering or typeface to echo (for example the car's lettering), examples they like |
+| Publishing | Domain name, host, what replaces any old contact form, who updates it and when |
 
 Offer sensible defaults when the user is unsure and say what you picked. If the user cannot answer a charity question, mark it `[NEEDED: ...]` and carry on. Never fill a charity fact from memory.
+
+Suggested rounds: round 1 confirms the existing site, team, charity and event; round 2 covers history, money, beneficiary stories, claims and sponsors; round 3 covers look, contact channels and publishing. Skip any round the existing site already answers.
 
 Write the answers into a one-page brief using `references/charity-brief-template.md`. Show it to the user and ask them to approve or correct it. Save it as `brief.md` and include it in the final zip.
 
@@ -94,7 +106,10 @@ Read `references/publishing-options.md` for hosting choices. Default to plain HT
 5. Delete sections the user does not need (for example Fundraising progress when there is no figure). Do not leave empty sections.
 6. Replace image stand-ins with real `<img>` tags, each with alt text, width and height.
 7. Keep the donate button in the first screen and again under How to help. Both point to the charity's official page.
-8. Keep the footer notice, adjusted to the facts the user confirmed.
+8. If the team has event history, add a Past events table. Show a date only where it was checked. Add a line saying other details come from the team's own records.
+9. Replace any old contact form with the contact channels the user chose: a Message us row with one button per active account, or plain email and phone. See `references/publishing-options.md`. List only accounts the team checks regularly.
+10. If the look asks for a typeface to echo the car's lettering, pick the closest free font, load it with a fallback stack, and say it is a close match, not the exact lettering. Note that Google Fonts are loaded from Google's servers.
+11. Keep the footer notice, adjusted to the facts the user confirmed.
 
 Write in plain English, short sentences, Australian spelling. Keep the team's voice, but keep the facts accurate.
 
@@ -122,7 +137,8 @@ The scripts cannot judge colour contrast or whether the copy is true. Look at th
 
 The user publishes the files. Walk them through it from `references/publishing-options.md`. Key points to say plainly:
 
-- A static host cannot run a server-side contact form. Use a public contact link, or a separate form service.
+- A static host cannot run a server-side contact form. Offer the simplest contact channels first: email and phone, a one-tap email button, and message links for the accounts the team really checks (Messenger, Instagram, WhatsApp). Only if the team wants written enquiries, add a Google Form link or a form service. Details are in `references/publishing-options.md`.
+- Upload the `images` folder with `index.html`, and keep the folder names the same as in the zip.
 - A domain name is usually a separate yearly cost, even when hosting is free.
 - If the files go in a public repository, everything in it is public.
 - If the site starts selling things or taking sponsorship payments, check the host's terms first.

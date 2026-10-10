@@ -4,6 +4,14 @@ Version: v1.00 | Date: [YYYY-MM-DD] | Status: [Draft / Approved]
 
 Mark anything missing as `[NEEDED: what]`. Never fill in a charity fact from memory.
 
+## 0. Existing site and sources
+
+| Item | Value |
+|---|---|
+| Current site or pages (address) | [...] |
+| What to keep, drop or update | [...] |
+| Official event page used for dates and route | [...] |
+
 ## 1. Team and charity
 
 | Item | Value |
@@ -28,6 +36,12 @@ Mark anything missing as `[NEEDED: what]`. Never fill in a charity fact from mem
 | Route or location | [...] |
 | How people can follow along | [...] |
 
+Past events (year, route, date, and whether the date was checked or is from the team's records):
+
+| Year | Route | Dates | Checked or team record |
+|---|---|---|---|
+| [...] | [...] | [...] | [...] |
+
 ## 4. The car
 
 | Item | Value |
@@ -47,6 +61,9 @@ Mark anything missing as `[NEEDED: what]`. Never fill in a charity fact from mem
 
 Claims to include (only if the charity confirms): [100% goes to charity / tax deductible / none].
 
+Beneficiary story: [named child or family with current consent / general story and link to the charity's stories page]
+Charity claims approved for use: [none / list with source]
+
 ## 6. Sponsors
 
 | Sponsor | Agreed to be listed? | Logo file | Link |
@@ -65,6 +82,7 @@ Claims to include (only if the charity confirms): [100% goes to charity / tax de
 ## 8. Look and feel
 
 - Livery colours: [...]
+- Lettering or typeface to echo: [...]
 - Light or dark: [Both / Light / Dark]
 - Tone: [friendly / bold / cheeky / serious]
 - Sites liked, and why: [...]
@@ -72,12 +90,15 @@ Claims to include (only if the charity confirms): [100% goes to charity / tax de
 ## 9. Contact and social
 
 - Public contact (link or address the team is happy to publish): [...]
-- Social pages to show: [...]
+- Active accounts, checked regularly, and whether each works as a way to contact the team: [Facebook / Messenger / Instagram / TikTok / WhatsApp / other]
+- Handle, link or number for each: [...]
+- WhatsApp number is the same as the public phone number? [Yes / No / Not used]
 
 ## 10. Publishing
 
 - Domain name: [...]
 - Hosting: [...]
+- What replaces any old contact form: [...]
 - Who updates the site: [...]
 - Go-live date: [...]
 
