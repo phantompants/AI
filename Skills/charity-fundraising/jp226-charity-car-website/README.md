@@ -42,10 +42,14 @@ Have these ready if you can: the address of your current site or Facebook page, 
 
 - `SKILL.md`: the instructions Claude follows
 - `assets/template/index.html`: the starting page
-- `references/`: brief template, fundraising rules, image preparation, publishing options
+- `references/`: brief template, fundraising rules, image preparation, publishing options, and copy-paste prompts for website builders, reviews and updates
 - `scripts/check_site.py`: general quality check
 - `scripts/check_charity_site.py`: fundraising checks
 - `scripts/screenshot.py`: desktop and phone screenshots
+
+## Related skills and feedback
+
+See `references/ai-prompts.md` for related JP226 skills (update writer, theme planner, image prep) and how to report problems.
 
 ## Troubleshooting
 

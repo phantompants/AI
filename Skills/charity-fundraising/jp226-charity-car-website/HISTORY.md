@@ -1,5 +1,12 @@
 # Version History
 
+## v1.04 (2026-10-11)
+
+- New `references/ai-prompts.md`: builder brief, live-site review prompt, update prompt, related JP226 skills and feedback link
+- SKILL.md points to it for builder users, reviews and updates
+- README file list and related skills section updated
+- Author: JP226Prints
+
 ## v1.03 (2026-10-10)
 
 - Made the skill host neutral: removed named-host wording from the interview, brief template and publishing options

@@ -3,10 +3,10 @@ name: jp226-charity-car-website
 description: Plans and builds a fundraising website for a charity themed car or team, such as a charity rally, drive, 4WD adventure or car show entry. Collects the team story, event details and history, official donation link, sponsors, photos and contact channels (or reads an existing site first), then builds a fast, accessible one-page site from a ready template with honest, dated fundraising figures and a link to the charity's own donation page. Use when the user wants a website for a charity car, rally team, fundraising vehicle or sponsored drive, says "build our team website", "make a site for our charity car", "we need a donation page for our rally team", or asks how to go from brief to live website. Triggers on "/jp226-charity-car-website".
 compatibility: Claude 3.5+ (Desktop, claude.ai, Claude Code). Python 3 and Chromium (Playwright) are needed for the optional checks.
 metadata:
-  version: "v1.03"
+  version: "v1.04"
   author: "JP226Prints"
   created: "2026-10-10"
-  updated: "2026-10-10"
+  updated: "2026-10-11"
   governance: "Personal (JP226Prints) + GitHub"
   status: "Active"
   category: "charity-fundraising"
@@ -95,7 +95,7 @@ Offer the two paths and recommend one:
 | Plain HTML and CSS (this skill's default) | Portable files, free or cheap hosting, full control | The user updates files, or asks Claude to |
 | An AI or drag-and-drop website builder | Editing in a browser, no files to manage | Ongoing cost, less portable |
 
-Read `references/publishing-options.md` for hosting choices. Default to plain HTML and CSS with a hosted preview here and a zip to take away.
+Read `references/publishing-options.md` for hosting choices. Default to plain HTML and CSS with a hosted preview here and a zip to take away. If the user chooses a hosted builder, or wants to review a live site or plan updates in another AI tool, read `references/ai-prompts.md` for copy-paste prompts.
 
 ### Step 4: Build from the template
 
@@ -143,11 +143,11 @@ The user publishes the files. Walk them through it from `references/publishing-o
 - If the files go in a public repository, everything in it is public.
 - If the site starts selling things or taking sponsorship payments, check the host's terms first.
 
-After it goes live, ask the user to test every donation, sponsor and social link on their phone, and check the fundraising date.
+After it goes live, ask the user to test every donation, sponsor and social link on their phone, and check the fundraising date. `references/ai-prompts.md` has a review prompt they can use in any AI tool.
 
 ### Step 8: Keep it current
 
-After each milestone (a sponsor confirmed, the car finished, the event starting, the final total), update the page. Change the dated figure, update the Updates section, and republish to the same preview address. Bump the zip version (`v1.01`, `v1.02`). Keep a backup of the source files. After the event, add a thank-you and the final total with its date.
+After each milestone (a sponsor confirmed, the car finished, the event starting, the final total), update the page. Change the dated figure, update the Updates section, and republish to the same preview address. Bump the zip version (`v1.01`, `v1.02`). Keep a backup of the source files. After the event, add a thank-you and the final total with its date. For sponsor posts and captions, suggest `jp226-fundraising-update-writer`.
 
 ## What this skill will not do
 
