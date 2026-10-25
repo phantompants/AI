@@ -9,6 +9,10 @@ Free Claude skills by JP226Prints, organised by category.
 - **[jp226-charity-rally-theme-planner](charity-fundraising/jp226-charity-rally-theme-planner)** v1.00: Helps a charity rally or drive team choose a car theme, team name and handles, then turns the choice into a one-page theme brief.
 - **[jp226-fundraising-update-writer](charity-fundraising/jp226-fundraising-update-writer)** v1.00: Writes honest fundraising messages for a charity team or event, such as sponsor requests, thank-yous, milestone updates, social posts and emails.
 
+### Social Media
+
+- **[jp226-video-to-shorts-planner](social-media/jp226-video-to-shorts-planner)** v1.00: Turns one long video into a week of seven distinct vertical Shorts, step by step.
+
 ### Websites
 
 - **[jp226-website-builder](websites/jp226-website-builder)** v1.02: Helps the user work out what they want from a website, writes it up as a short brief, then builds the site.
