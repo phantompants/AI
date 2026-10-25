@@ -16,4 +16,8 @@ Free Claude skills by JP226Prints, organised by category.
 ### Images and Design
 
 - **[jp226-web-image-prep](images-and-design/jp226-web-image-prep)** v1.00: Prepares photos and logos for a website.
+
+### Other
+
+- **[jp226-deal-code-finder](other/jp226-deal-code-finder)** v1.00: Find discount codes, promo codes, coupons and deals for an Australian merchant by searching OzBargain and similar Australian deal and coupon sites.
 <!-- jp226-skills:end -->
